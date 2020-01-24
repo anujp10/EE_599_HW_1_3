@@ -5,6 +5,8 @@ int Solution::FindMedian(std::vector<int> &inputs) {
   if (inputs.size() == 0) {
     return -1;
   }
+  else if (inputs.size() == 1)
+    return inputs[0];
   
   if (inputs.size() % 2)
     median = inputs[(inputs.size() / 2)];
